@@ -1,5 +1,7 @@
 #Celery Sample
+
 Currently, I work with `celery`,but I have no deep understand it, so I have write this simple demo for beginer like me for now!
+
 
 ###How do we need to install?
 -----------------------------
@@ -32,4 +34,19 @@ terminal-C
 python celery_http_client.py
 ```
 We tell the celery , we got some job and you need to help me ...
+if you have clone the source from my github, you can do `git checkout v0.1` get the current version.
 
+###How to use flower to monitor celery
+
+To use the flower, you need to install it first!
+
+```
+pip install flower
+```
+and after install success, you can do the below command to run it.
+
+```
+flower --broker=redis://localhost:6379/0
+
+```
+and then visit the `http://localhost:5555` you will happy :) 
